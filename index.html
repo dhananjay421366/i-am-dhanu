@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhananjay Nimbalkar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&amp;family=Courgette&amp;family=Lobster&amp;family=Poppins&amp;family=Ubuntu:wght@300&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      /*color: #000;;*/
+      /*background-color: #050323;*/
+      height: 2500px;
+    }
+
+    .row {
+      width: 100%;
+      height: 700px;
+    }
+
+    .col {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .control-Crouse {
+      height: 800px;
+    }
+
+    .heding {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      /*color: #000;*/
+      /*color: rgb(255, 225, 2);*/
+    }
+
+    .myimg {
+      height: 430px;
+      width: 300px;
+      margin-top: 25px;
+      flex-shrink: 15;
+      /*position: relative;
+            top: 20px;
+            left: 0px;*/
+      cursor: pointer;
+      border: 1px solid rgb(1, 2, 33);
+      border-radius: 10px 10px;
+      transition-duration: 1s;
+      transition-timing-function: step-start;
+      transition-delay: 0s;
+    }
+
+    .myimg:hover {
+      height: 440px;
+      width: 310px;
+      box-shadow: 0px 0px 100px rgb(204, 0, 255);
+    }
+
+    #abt-img:hover {
+      height: 440px;
+      width: 310px;
+      box-shadow: 0px 0px 100px rgb(204, 0, 255);
+    }
+
+    @media (min-width: 200px) and (max-width: 991px) {
+      .myimg {
+        height: 430px;
+        width: 300px;
+        margin-top: 25px;
+        flex-shrink: 15;
+        /*position: relative;
+            top: 20px;
+            left: 0px;*/
+        cursor: pointer;
+        /*border: 1px solid rgb(1, 2, 33);*/
+        border-radius: 10px 10px;
+      }
+    }
+
+    .carousel-item {
+      height: 600px;
+    }
+
+    .d-block {
+      height: 600px;
+      width: 80%;
+      flex-shrink: 15;
+    }
+
+    .fab {
+      font-size: 30px;
+    }
+
+    #cont1 {
+      height: 750px;
+    }
+
+    #cont2 {
+      height: 700px;
+      overflow-y: auto;
+    }
+
+    #cont3 {
+      height: 900px;
+      width: 100%;
+      overflow: auto;
+    }
+
+    #new1 {
+      height: 600px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      #new1 {
+        height: 1200px;
+      }
+    }
+
+    .skillheding {
+      text-align: left;
+    }
+
+    .txtheding {
+      font-size: 40px;
+    }
+
+    .AboutMe {
+      text-align: left;
+    }
+
+    .btn {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .subheading {
+      /*color: #000;*/
+    }
+
+    .box {
+      text-align: left;
+      /*background-color: #061a4a;*/
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      box-shadow: 0px 0px 100px rgb(207, 51, 255);
+    }
+
+    .resume-section {
+      height: 1000px;
+    }
+
+    .service-box {
+      height: 300px;
+      padding: 30px;
+    }
+
+    .service-img {
+      height: 200px;
+      width: 220px;
+      cursor: pointer;
+    }
+
+    .service-img:hover {
+      box-shadow: 0px 0px 100px rgb(207, 50, 255);
+    }
+
+    .prj-img {
+      height: 20 0px;
+    }
+
+    .project-card {
+      height: 380px;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      box-shadow: 0px 0px 100px rgb(207, 50, 255);
+    }
+
+    @media screen and (max-width: 400px) {
+      #cont4 {
+        height: 1300px;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      #cont5 {
+        height: 1800px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      #cont5 {
+        height: 1800px;
+      }
+    }
+
+    @media (min-width: 200px) and (max-width: 991px) {
+      #cont6 {
+        height: 1400px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .front-info {
+        height: 1800px;
+      }
+    }
+
+    .blog-card {
+      height: 400px;
+      cursor: pointer;
+    }
+
+    @media (min-width: 200px) and (max-width: 991px) {
+      #cont7 {
+        height: 1400px;
+      }
+    }
+
+    /**********video css*****************/
+    #cont8 {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
+
+    @media (min-width: 200px) and (max-width: 1134px) {
+      .hire-img {
+        height: 300px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+      }
+
+      #cont8 {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+      }
+
+      video {
+        height: 800px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+    }
+
+    video {
+      height: 800px;
+      width: 100%;
+    }
+
+    @media (min-width: 200px) and (max-width: 1134px) {
+      .hire-txt {
+        position: absolute;
+        top: 130px;
+        left: 61px;
+        z-index: 2;
+        /*color: rgb(251, 230, 0);*/
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+
+      .hire-btn {
+        position: absolute;
+        top: 170px;
+        left: 60px;
+        height: 35px;
+        width: 100px;
+
+        font-size: 17px;
+        /*color: #000;*/
+        padding: 10px 10px 10px 10px;
+      }
+    }
+
+    @media (min-width: 459px) and (max-width: 1562px) {
+      .hire-txt {
+        position: absolute;
+        top: 200px;
+        left: 450px;
+        z-index: 2;
+        /*color: rgb(254, 254, 9);*/
+        text-align: center;
+        font-size: 70px;
+        font-weight: bolder;
+      }
+
+      .hire-btn {
+        position: absolute;
+        top: 300px;
+        left: 500px;
+        height: 50px;
+        font-size: 23px;
+        color: #000;
+      }
+    }
+
+    #cont9 {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    @media (min-width: 200px) and (max-width: 768px) {
+      #cont9 {
+        height: 987px;
+        overflow: hidden;
+      }
+    }
+
+    .contact-img {
+      height: 100px;
+    }
+
+    .contact-col {
+      height: 250px;
+    }
+
+    .ph-no {
+      /*color: white;*/
+    }
+
+    .ph-no:hover {
+      /*color: white;*/
+    }
+
+    .form-row {
+      height: 400px;
+      border: 1px solid rgb(0, 34, 255);
+    }
+
+    .form-col {
+      width: 300px;
+      background-color: white;
+    }
+
+    #cont10 {
+      height: 400px;
+      overflow: hidden;
+    }
+  </style>
+  <style>
+    INPUT:-webkit-autofill,
+    SELECT:-webkit-autofill,
+    TEXTAREA:-webkit-autofill {
+      animation-name: onautofillstart;
+    }
+
+    INPUT:not(:-webkit-autofill),
+    SELECT:not(:-webkit-autofill),
+    TEXTAREA:not(:-webkit-autofill) {
+      animation-name: onautofillcancel;
+    }
+
+    @keyframes onautofillstart {}
+
+    @keyframes onautofillcancel {}
+  </style>
+</head>
+
+<body>
+
+  <body id="body">
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg w-100">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="http://127.0.0.1:5502/index.html">
+            <h1 class="heding"><i>Dhananjay Nimbalkar</i></h1>
+          </a>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="tel:7350304620">Callme</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hallo.html">About</a>
+              </li>
+            </ul>
+            <button onclick="toggletheme()" class="btn btn-warning mx-3" id="Theme">
+            Dark
+            </button>
+             <button onclick="toggletheme1()" class="btn btn-warning" id="Them">
+              Light
+            </button>
+          </div>
+          <!-- <button onclick="pratap()" id="ps">click here</button> -->
+        </div>
+      </nav>
+      <script>
+  //  let icon= document.getElementById("theme");
+  //  icon.onclick= function(){
+  //   document.body.classList.toggle("dark-theme")
+  //  }
+
+
+
+        function toggletheme(){
+          var element = document.body.style.backgroundColor = "black";
+          element.classList.toggle('dark-mode');
+         }
+        function toggletheme1(){
+          var element = document.body.style.backgroundColor = "white";
+          element.classList.toggle('light-mode');
+         }
+        // let color = ['white','black']
+        // let dark = document.getElementById("theme")
+        // dark.addEventListener('click'){
+        //   let random color = color[Math.floor](Math.random()*color.length)
+        //   argument document.body.style.background = "black"
+        // }
+      </script>
+    </header>
+    <br />
+
+    <br />
+    <!--front image and information section-->
+    <div class="container" id="cont1">
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="front-info">
+                  <img class="myimg" src="short.jpg" alt="Dhananjay Nimbalkar" /><br /><br />
+                  <h1 class="heding"><i>Dhananjay Dadasaheb Nimbalkar</i></h1>
+                  <h4 class="heding">B.Sc(COMPUTER SCIENCE )</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <h1 class="txtheding">Hello!</h1>
+                <br />
+                <h2 class="txtheding">
+                  I'am <i class="heding txtheding">Dhananjay Nimbalkar</i>
+                </h2>
+                <br />
+                <h4 class="txtheding">Full Stack Web devloper</h4>
+                <br />
+                <h4 class="txtheding">based in Karjat</h4>
+                <button class="btn btn-warning text-dark mx-3 my-5">
+                  HIRE ME
+                </button>
+                <button class="btn btn-warning text-dark mx-3 my-5">
+                  MY WORKS
+                </button>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--About me section-->
+    <div class="container" id="new1">
+      <div class="row">
+        <div class="col">
+          <br /><br />
+          <img src="short.jpg" class="myimg" id="abt-img" alt="Dhananjay Nimbalkar" />
+        </div>
+        <div class="col AboutMe">
+          <br /><br />
+          <h1 class="subheading">About Me</h1>
+          <br />
+          <h4>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhananjay Nimbalkar</h4>
+          <br />
+          <h4>DateOB:&nbsp;&nbsp;June 08, 2005</h4>
+          <br />
+          <h4>Address:&nbsp;&nbsp;Karjat, Ahmednagar,Maharashtra</h4>
+          <br />
+          <h4>Zip code:&nbsp;&nbsp;414401</h4>
+          <br />
+          <h4>Phone:&nbsp;&nbsp;&nbsp; +91 7350304620</h4>
+          <button href="yash resume.jpg" class="btn btn-warning text-black my-3" style="">
+            <a href="yash resume.jpg">DOWNLOAD CV</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--Resume  section-->
+    <div class="container" id="cont4">
+      <div class="row resume-section">
+        <div class="col">
+          <h1 class="subheading my-5">Resume</h1>
+          <div class="box">
+            <br />
+            <h1 class="subheading">Full Stack Web Development</h1>
+            <h4>2022</h4>
+            <p>
+              full stack devlopment contains front-end technologies are HTML
+              CSS JS bootstrap etc.
+            </p>
+            <p>and back-end technologies are PHP LARAVEL MYSQL etc.</p>
+          </div>
+          <br />
+
+          <div class="box">
+            <br />
+            <h1 class="subheading">B.Sc(COMPUTER SCIENCE)</h1>
+            <h4>LAST YEAR B.Sc(CS)-2023</h4>
+            <p>
+              B.Sc(COMPUTER SCIENCE) is formerly kmnown as BCS in
+              <a href="http://www.dpcollege.in">DADA PATIL COLLEGE KARJAT AHMEDNAGER</a>
+              affilited to Savitribai Phule Pune University pune. Public
+              university in Pune, Maharashtra.
+            </p>
+          </div>
+          <br />
+
+          <div class="box">
+            <br />
+            <h1 class="subheading">HSC &amp; SSC</h1>
+            <p>
+              HSC science with 56% in Dada patil college karjat,ahmednagar.in
+              year 2020-2020<br />MAHARASHTRA STATE BOARD
+            </p>
+            <p>
+              SSC with 79% in new english school chapadgoan karjat
+              ahmednagar.in year 2022<br />MAHARASHTRA STATE BOARD
+            </p>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <!--Skill section-->
+    <div class="container" id="cont2">
+      <div class="row">
+        <div class="col">
+          <h1 class="container heding">Skills</h1>
+          <h4 class="skillheding">C 80%</h4>
+          <div class="progress bg-warning" style="height: 20px">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              C++
+            </div>
+          </div>
+          <br /><br />
+
+          <h4 class="skillheding">HTML 80%</h4>
+          <div class="progress bg-warning" style="height: 20px">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              Java
+            </div>
+          </div>
+          <br /><br />
+
+          <h4 class="skillheding">Javascript 70%</h4>
+          <div class="progress bg-warning" style="height: 20px">
+            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+              aria-valuemax="100">
+              Javascript
+            </div>
+          </div>
+          <br /><br />
+
+          <h4 class="skillheding">CSS 80%</h4>
+          <div class="progress bg-warning" style="height: 20px">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              Python
+            </div>
+          </div>
+          <br /><br />
+
+          <h4 class="skillheding">SQL 80%</h4>
+          <div class="progress bg-warning" style="height: 20px">
+            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+              aria-valuemax="100">
+              SQL
+            </div>
+          </div>
+          <br /><br />
+        </div>
+      </div>
+    </div>
+
+    <!--projects section-->
+    <div class="container" id="cont6">
+      <div class="row">
+        <h1 class="subheading heding my-5">Projects</h1>
+        <div class="col my-3">
+          <div class="card project-card" style="width: 18rem">
+            <img class="prj-img" src="" alt="Portfolio website" />
+            <div class="card-body">
+              <h5 class="card-title text-black">Portfolio website</h5>
+              <p class="card-text text-black">
+                representation of work we have created my projects, as well as
+                my skills and experiences.
+              </p>
+              <a href="http://127.0.0.1:5501/index.html" class="btn btn-primary my-5">Go To Projets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="card project-card" style="width: 18rem">
+            <img class="prj-img" src="images/projects/online-shopping-system-1561229754-4966428.jpg"
+              alt="Online shopping system" />
+            <div class="card-body">
+              <h5 class="card-title text-black"></h5>
+              <p class="card-text text-black">.</p>
+              <a href="http://localhost/ecommerce/" class="btn btn-primary my-3">Go To Projets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="card project-card" style="width: 18rem">
+            <img class="prj-img" src="images/projects/notes app.png" alt="Notes taking app" />
+            <div class="card-body">
+              <h5 class="card-title text-black">
+                Note wirteing with text functionality
+              </h5>
+              <p class="card-text text-black">
+                Note wirteing with text functionality
+              </p>
+              <a href="" class="btn btn-primary">Go To Projets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!--Blog section-->
+    <div class="container" id="cont7">
+      <div class="row">
+        <h1 class="subheading heding">Our Blog</h1>
+        <div class="col my-3">
+          <div class="card blog-card" style="width: 20rem">
+            <img src="blog.jpg" class="card-img-top blog-img" style="width: 20rem"
+              alt="How to Become a Full Stack Developer" />
+            <div class="card-body">
+              <h5 class="card-title text-black">
+                How to Become a Full Stack Developer
+              </h5>
+              <p class="card-text text-black">
+                To become a full stack developer, you need to familiarize
+                yourself with two basic web development concepts: the front
+                end and the back end.
+              </p>
+              <a href="" class="btn btn-primary">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="card blog-card" style="width: 20rem">
+            <img src="data.jpg" class="card-img-top blog-img" alt="Data science" />
+            <div class="card-body">
+              <h5 class="card-title text-black">Data science</h5>
+              <p class="card-text text-black">
+                Data science is study that deals with vast volumes of data
+                using modern tools and techniques to find unseen patterns, and
+                make business decisions
+              </p>
+              <a href="#" class="btn btn-primary my-3">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="card blog-card" style="width: 20rem">
+            <img src="artificial.jpg" (2).png" class="card-img-top blog-img" alt="Artificial intelligence">
+            <div class="card-body">
+              <h5 class="card-title text-black">Artificial intelligence</h5>
+              <p class="card-text text-black">
+                Artificial intelligence is the simulation of human
+                intelligence processes by machines, especially computer
+                systems.
+              </p>
+              <a href="#" class="btn btn-primary">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---servises section-->
+    <div class="container my-0" id="cont5">
+      <div class="row">
+        <h1 class="subheading heding">Services</h1>
+        <div class="col mx-3 service-box">
+          <a href="#">
+            <img class="service-img" src="web.jpg" alt="" />
+          </a>
+          <h3 class="subheading">WEB DESIGN</h3>
+        </div>
+        <div class="col mx-3 service-box">
+          <a href="#">
+            <img class="service-img" src="web devlopment.jpg" alt="" />
+          </a>
+          <h3 class="subheading">WEB DEVLOPMENT</h3>
+        </div>
+
+        <div class="col mx-3 service-box">
+          <a href="#">
+            <img class="service-img" src="digital.jpg" alt="" />
+          </a>
+          <h3 class="subheading">DIGITAL MARKETING</h3>
+        </div>
+        <div class="col mx-3 service-box">
+          <a href="#">
+            <img class="service-img" src="search image.jpg" alt="" />
+          </a>
+          <h3 class="subheading">SEARCH ENGIN OPTIMIZATION</h3>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!---hire me section-->
+    <div class="hire-me" id="cont8">
+      <video class="hire-img" autoplay="" loop="" muted="" plays-inline="">
+        <source src="sea_-_33194 (1080p) - Copy.mp4" type="video/mp4" />
+      </video>
+      <h1 class="hire-txt">I'm Available for Hiring</h1>
+      <br />
+      <button class="btn btn-warning hire-txt hire-btn">HIRE MI</button>
+    </div>
+    <br /><br />
+
+    <!---contact me section-->
+    <div class="container" id="cont9">
+      <h1 class="subheading heding">Contact Me</h1>
+      <div class="row">
+        <div class="col contact-col">
+          <img class="contact-img my-3" src="address logo.jpg" alt="" />
+          <h5>ADDRESS</h5>
+          <p>Dighi , Karjat,<br />Maharashtra - 414401</p>
+        </div>
+        <div class="col contact-col">
+          <img class="contact-img my-3" src="contact.png" alt="" />
+          <h5>CONTACT NUMBER</h5>
+          <p><a class="ph-no" href="tel:9309580827">9322009028</a></p>
+          <p><a class="ph-no" href="tel:7278463131">7350304620</a></p>
+        </div>
+        <div class="col contact-col">
+          <img class="contact-img my-3" src="mail.jpg" alt="" />
+          <h5>EMAIL ADDRESS</h5>
+          <p>
+            <a class="ph-no" href="mailto:nimbalkardhananjay349@gmail.com"></a>nimbalkardhananjay349@gmail.com
+          </p>
+        </div>
+        <div class="col contact-col">
+          <img class="contact-img my-3" src="web logo.png" alt="" />
+          <h5>WEBSITE</h5>
+          <a class="ph-no" href="https://http://127.0.0.1:5501/index.html">yoursite.com</a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div id="noti"></div>
+    </div>
+
+    <br />
+    <!---Message form section-->
+    <div class="container" id="cont10">
+      <div class="row form-row">
+        <div class="col form-col">
+          <form name="form1">
+            <div class="mb-3 my-5">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" id="exampleInputEmail1"
+                aria-describedby="emailHelp" required="" />
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" id="exampleInputEmail1"
+                aria-describedby="emailHelp" required="" />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Subject" id="exampleInputPassword1" required="" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" placeholder="Message" id="" rows="3" required=""></textarea>
+            </div>
+            <button type="submit" onclick="showalert()" class="btn btn-warning text-dark">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Footer section-->
+    <footer class="text-center text-secondary w-100 my-5">
+      <div class="text-center text-red-600 p-3" style="background-color: 010717">
+        Copyright ©2023 All rights reserved❤️by Dhananjay.Nimbalkar
+      </div>
+    </footer>
+
+    <script src="JS/alert.js"></script>
+    <script src="JS/them.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <script>
+      //         const btn = document.getElementById('them');
+
+      // btn.addEventListener('click', function onClick(event) {
+      //   // 👇️ change background color
+      //   document.body.style.backgroundColor = 'black';
+
+      //   // 👇️ optionally change text color
+      //   // document.body.style.color = 'white';
+      // });
+
+      // function theme() {
+      //   document.getElementById("theme").document.style.color = "black";
+      //   //   changeColor("yellow");
+      //   //   el_down.innerHTML = "Background Color changed";
+      // }
+
+      function pratap() {
+        let a = document.getElementById("ps");
+        a.document.body.style.backgroundColor = "black";
+      }
+    </script>
+  </body>
+</body>
+
+</html>
